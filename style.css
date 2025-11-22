@@ -31,6 +31,13 @@ body {
     --border-primary-color: #333333;
 
 
+    /* Border Radius Variable */
+    --border-radius-xs: 4px;
+    --border-radius-sm: 8px;
+    --border-radius-md: 12px;
+    --border-radius-lg: 16px;
+    --border-radius-xl: 20px;
+    --border-radius-2xl: 24px;
 }
 
 html {
@@ -58,4 +65,9 @@ section .infos {
 .info h3 {
     padding: var(--space-sm) var(--space-md);
     border: 1px solid var(--border-primary-color);
+    border-radius: var(--border-radius-sm);
 }
+
+                    /*  Snake Bord  */
+
+                    
