@@ -74,9 +74,9 @@ section .infos {
     border-radius: var(--border-radius-sm);
 }
 
-                    /*  Snake Bord  */
+/*  Snake Bord  */
 
-.board{
+.board {
     /* border:  white; */
     border: 1px solid var(--border-primary-color);
     flex-grow: 1;
@@ -85,16 +85,52 @@ section .infos {
     grid-template-rows: repeat(auto-fill, minmax(50px, 1fr));
 }
 
-.block{
+.block {
     /* height: 30px;
     width: 30px; */
     border: 1px solid var(--border-primary-color);
 }
 
-.fill{
+.fill {
     background-color: var(--bg-fill-color);
 }
 
-.food{
+.food {
     background-color: var(--bg-food-color);
+}
+
+.modal {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    background-color: #35353587;
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal .start-game,
+.modal .game-over{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-lg);
+}
+
+.btn {
+    border: none;
+    cursor: pointer;
+    padding:  var(--space-sm) var(--space-md);
+    border-radius: var(--border-radius-sm);
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+.modal .game-over{
+    display: none;
 }
